@@ -1,0 +1,108 @@
+:root {
+    --header-bg: #111720;
+    --yellow: #fac650;
+    --primary-bg: #222831;
+    --option-bg: #393e46;
+    --option-bg-hover: #4a4f57;
+    --option-bg-active: #5b5f68;
+    --text-white: #ddd;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100%;
+    font-family: "Roboto", Arial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--text-white);
+}
+
+header {
+    background-color: var(--header-bg);
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-family: "Press Start 2P";
+    color: var(--yellow);
+    margin: 0; 
+}
+
+.primary-div {
+    background-color: var(--primary-bg);
+    flex:1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+#sub-heading {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#play-div {
+    display: flex;
+    justify-content: center;
+}
+
+#play-div div {
+    width: 170px;
+    height: 128px;
+    text-align: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score-div {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#score-div div {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-weight: bolder;
+}
+
+#options-div {
+    display: flex;
+    gap: 30px;
+}
+
+#options-div button {
+    height: 160px;
+    width: 160px;
+    font-size: 80px;
+    background-color: var(--option-bg);
+    border-radius: 10px;
+    border-style: none;
+    color: var(--text-white);
+}
+
+#options-div button:hover {
+    background-color: var(--option-bg-hover);
+    cursor: pointer; 
+}
+
+#options-div button:active {
+    background-color: var(--option-bg-active);
+}
+

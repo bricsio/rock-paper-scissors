@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/310/waving-hand_1f44b.png">
     <!-- <script src="./script.js" defer></script> -->
     <script src="./script-2.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <button value="rock">Rock</button>
-    <button value="paper">Paper</button>
-    <button value="scissors">Scissors</button>
-    
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <div class="primary-div">
+
+        <p id="sub-heading"><span id="sub1" style="font-size: 32px; font-weight: bold;">Let's play!</span> <br> <span id="sub2" style="font-size: 20px;">First player to score 5 points wins the game</span></p>
+
+        <div id="play-div">
+            <div id="player-choice">
+                &#10068
+            </div>
+            <div id="computer-choice">
+                &#10068
+            </div>
+        </div>
+
+        <div id="score-div">
+            <div id="player-score">You: 0</div>
+            <div id="computer-score">Computer: 0</div>
+        </div>
+
+        <div id="options-div">
+            <button value="ROCK">&#9994</button>
+            <button value="PAPER">&#9995</button>
+            <button value="SCISSORS">&#9996</button>
+        </div>
+
+
+    </div>
+    <footer style="background-color: var(--primary-bg); text-align: center; padding: 10px 0;">
+        Copyright &copy 2022 bricsio
+    </footer>
 </body>
+
 </html>
